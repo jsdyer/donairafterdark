@@ -1,16 +1,39 @@
 {
-  "id": "coolcode-tool-template",
-  "title": "CoolCode Tool Starter",
-  "description": "A browser-only example that trims lines and removes exact duplicates.",
-  "category": "security",
-  "tags": ["text", "lines", "duplicates"],
-  "icon": "scan-search",
-  "url": "/coolcode-tool-template/",
-  "source": "https://github.com/jsdyer/coolcode-tool-template",
+  "id": "donairafterdark",
+  "title": "Donair After Dark",
+  "description": "Price your usual donair order and see which Halifax counters list pickup hours for the time you choose.",
+  "category": "places",
+  "tags": [
+    "Halifax",
+    "Nova Scotia",
+    "donair",
+    "food",
+    "pickup",
+    "late night"
+  ],
+  "icon": "map-pin",
+  "url": "/donairafterdark/",
+  "source": "https://github.com/jsdyer/donairafterdark",
   "hosting": "project",
   "access": "browser",
   "data_info": {
-    "mode": "local",
-    "detail": "The browser reads the text you paste and compares its lines."
+    "mode": "snapshot",
+    "detail": "Halifax shop menus supply counter prices, sauce sizes and weekly pickup hours.",
+    "cadence": "Weekly change checks; manual price review",
+    "probes": [
+      {
+        "label": "Menus verified",
+        "url": "https://coolcode.ca/donairafterdark/data/status.json",
+        "path": [
+          "verified"
+        ],
+        "count_at": {
+          "path": [
+            "count"
+          ],
+          "unit": "branches"
+        }
+      }
+    ]
   }
 }

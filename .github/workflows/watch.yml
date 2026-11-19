@@ -1,0 +1,45 @@
+name: Review shop menu changes
+on:
+  schedule:
+    - cron: '37 15 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: menu-review
+  cancel-in-progress: false
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Compare reviewed sources
+        id: check
+        run: |
+          set -o pipefail
+          python3 scripts/watch.py | tee "$RUNNER_TEMP/menu-check.txt"
+      - name: Open or update the review issue
+        if: failure() && steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          title='Review Halifax menu sources'
+          body="$RUNNER_TEMP/review-body.txt"
+          {
+            echo 'The source comparison found changes or could not read a source. Published prices and verification dates still reflect the last manual review.'
+            echo
+            cat "$RUNNER_TEMP/menu-check.txt"
+            echo
+            echo "Review run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          } > "$body"
+          issue=$(gh issue list --state open --search '"Review Halifax menu sources" in:title' --json number,title --jq '.[] | select(.title == "Review Halifax menu sources") | .number' | head -1)
+          if [ -n "$issue" ]; then
+            gh issue edit "$issue" --body-file "$body"
+          else
+            gh issue create --title "$title" --body-file "$body"
+          fi

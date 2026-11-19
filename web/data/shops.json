@@ -1,0 +1,269 @@
+[
+  {
+    "id": "tonys",
+    "name": "Tony’s Donair",
+    "area": "Robie Street",
+    "address": "2390 Robie Street",
+    "phone": "902-404-8669",
+    "prices": {
+      "entry": 955,
+      "medium": 1195,
+      "large": 1400
+    },
+    "entryLabel": "Regular",
+    "sauces": [
+      {
+        "label": "Small",
+        "oz": null,
+        "cents": 150
+      },
+      {
+        "label": "Medium",
+        "oz": null,
+        "cents": 200
+      },
+      {
+        "label": "Large",
+        "oz": null,
+        "cents": 300
+      }
+    ],
+    "week": [
+      [
+        660,
+        1560
+      ],
+      [
+        660,
+        1560
+      ],
+      [
+        660,
+        1560
+      ],
+      [
+        660,
+        1620
+      ],
+      [
+        660,
+        1620
+      ],
+      [
+        660,
+        1680
+      ],
+      [
+        660,
+        1680
+      ]
+    ],
+    "menu": "https://www.tonysdonair.com/donairs",
+    "contact": "https://www.tonysdonair.com/donairs",
+    "menuDate": null,
+    "checked": "2026-11-19",
+    "sourceNote": "The Robie Street menu lists weekly counter hours and three sizes of extra sauce. It gives no cup volumes."
+  },
+  {
+    "id": "kod-quinpool",
+    "name": "King of Donair",
+    "area": "Quinpool Road",
+    "address": "6422 Quinpool Road",
+    "phone": "902-421-0000",
+    "prices": {
+      "entry": 899,
+      "medium": 1149,
+      "large": 1399
+    },
+    "entryLabel": "Regular",
+    "sauces": [
+      {
+        "label": "2 oz",
+        "oz": 2,
+        "cents": 110
+      },
+      {
+        "label": "4 oz",
+        "oz": 4,
+        "cents": 225
+      },
+      {
+        "label": "8 oz bottle",
+        "oz": 8,
+        "cents": 549
+      }
+    ],
+    "week": null,
+    "menu": "https://www.kingofdonair.ca/wp-content/user_files/2024/10/24-KOD-MENU-WEB.pdf",
+    "contact": "https://www.kingofdonair.ca/order-online-choose-a-location/",
+    "menuDate": "2024-10-28",
+    "checked": "2026-11-19",
+    "sourceNote": "Both Halifax branches link this PDF. Its creation date is shown below. The branch listing gives a phone number for counter hours."
+  },
+  {
+    "id": "zesty",
+    "name": "Zesty Pizza",
+    "area": "Spryfield",
+    "address": "477 Herring Cove Road",
+    "phone": "902-475-8888",
+    "prices": {
+      "entry": 1050,
+      "medium": 1250,
+      "large": 1450
+    },
+    "entryLabel": "Small",
+    "sauces": [
+      {
+        "label": "Small · 4 oz",
+        "oz": 4,
+        "cents": 175
+      },
+      {
+        "label": "Medium · unclear volume",
+        "oz": null,
+        "cents": 275
+      },
+      {
+        "label": "Large · 10 oz",
+        "oz": 10,
+        "cents": 425
+      }
+    ],
+    "week": [
+      [
+        900,
+        1260
+      ],
+      [
+        660,
+        1320
+      ],
+      [
+        660,
+        1320
+      ],
+      [
+        660,
+        1320
+      ],
+      [
+        660,
+        1320
+      ],
+      [
+        660,
+        1440
+      ],
+      [
+        900,
+        1440
+      ]
+    ],
+    "menu": "https://zestypizza.ca/menu/donairs",
+    "contact": "https://zestypizza.ca/",
+    "menuDate": null,
+    "checked": "2026-11-19",
+    "sourceNote": "Hours come from the day-by-day schedule on the homepage. The menu prints an ambiguous volume for the medium sauce."
+  },
+  {
+    "id": "metro",
+    "name": "Metro Pizza",
+    "area": "Lady Hammond Road",
+    "address": "6021 Lady Hammond Road",
+    "phone": "902-425-7999",
+    "prices": {
+      "entry": 995,
+      "medium": 1195,
+      "large": 1495
+    },
+    "entryLabel": "Small",
+    "sauces": [
+      {
+        "label": "Small",
+        "oz": null,
+        "cents": 195
+      },
+      {
+        "label": "Medium",
+        "oz": null,
+        "cents": 295
+      },
+      {
+        "label": "Large",
+        "oz": null,
+        "cents": 395
+      }
+    ],
+    "week": [
+      [
+        960,
+        null
+      ],
+      [
+        960,
+        1440
+      ],
+      [
+        960,
+        1440
+      ],
+      [
+        960,
+        1440
+      ],
+      [
+        960,
+        1440
+      ],
+      [
+        960,
+        1620
+      ],
+      [
+        960,
+        1620
+      ]
+    ],
+    "menu": "https://metropizzahalifax.ca/menu",
+    "contact": "https://metropizzahalifax.ca/contact-us",
+    "menuDate": null,
+    "checked": "2026-11-19",
+    "sourceNote": "Expand Hours on the contact page for the weekly schedule. The schedule gives a Sunday opening time and omits the closing time."
+  },
+  {
+    "id": "kod-clayton",
+    "name": "King of Donair",
+    "area": "Clayton Park",
+    "address": "278 Lacewood Drive",
+    "phone": "902-445-0000",
+    "prices": {
+      "entry": 899,
+      "medium": 1149,
+      "large": 1399
+    },
+    "entryLabel": "Regular",
+    "sauces": [
+      {
+        "label": "2 oz",
+        "oz": 2,
+        "cents": 110
+      },
+      {
+        "label": "4 oz",
+        "oz": 4,
+        "cents": 225
+      },
+      {
+        "label": "8 oz bottle",
+        "oz": 8,
+        "cents": 549
+      }
+    ],
+    "week": null,
+    "menu": "https://www.kingofdonair.ca/wp-content/user_files/2024/10/24-KOD-MENU-WEB.pdf",
+    "contact": "https://www.kingofdonair.ca/order-online-choose-a-location/",
+    "menuDate": "2024-10-28",
+    "checked": "2026-11-19",
+    "sourceNote": "Both Halifax branches link this PDF. Its creation date is shown below. The branch listing gives a phone number for counter hours."
+  }
+]
