@@ -19,7 +19,7 @@
   "data_info": {
     "mode": "snapshot",
     "detail": "Halifax shop menus supply counter prices, sauce sizes and weekly pickup hours.",
-    "cadence": "Weekly change checks; manual price review",
+    "cadence": "Weekly",
     "probes": [
       {
         "label": "Menus verified",
