@@ -33,3 +33,11 @@ Weekly GitHub Actions checks compare published menu sections, the branch PDF lin
 4. Run `node --test tests/*.test.mjs`, `python3 -m unittest discover -s tests -v`, and `python3 scripts/build.py`. To test the browser, install `tests/browser-requirements.txt` and Playwright Chromium, then run `python3 tests/browser_smoke.py`. An existing Chromium executable can be set with `CHROMIUM_PATH`. Main builds publish to GitHub Pages.
 
 The app builds offline. The cropped menu photograph by Paulo O is distributed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/). [Original photograph](https://commons.wikimedia.org/wiki/File:Donair_(47003391564).jpg). Archivo Black is distributed under the SIL Open Font License included in `web/assets/archivo-license.txt`.
+
+<!-- schedule-reliability -->
+## Schedule reliability
+
+Public GitHub repositories can have scheduled workflows disabled after 60 days of inactivity. A separate weekly [schedule guard](.github/workflows/schedule-guard.yml) calls GitHub's enable-workflow API for an explicit list of refresh workflows and itself. It can restore workflows disabled for inactivity, preserves manually disabled workflows, and runs independently of collection failures.
+
+This is an interim mitigation, not a scheduling guarantee: GitHub does not document active-workflow renewal as a permanent exemption, and scheduled runs can be delayed or dropped. A scheduler on our own Linux server is the planned independent trigger. The guard does not collect data, create dummy commits, or change source/check timestamps; successful collection and published data freshness still need monitoring.
+<!-- /schedule-reliability -->
