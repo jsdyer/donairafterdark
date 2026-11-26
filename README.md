@@ -6,6 +6,8 @@
 Try Saturday at 12:45 a.m. to see Friday’s hours carry past midnight at Tony’s and Metro Pizza. Compare two entry-size donairs with the smallest extra sauce, or request exactly 4 oz to see which menus publish that portion. Save your usual basket on this device.
 <!-- /coolcode:guide -->
 
+The offline build publishes a source-linked menu comparison in the initial HTML from the same reviewed prices as the planner. Each row carries its own review date.
+
 ## Ordering
 
 Compare five pickup addresses across four businesses by Halifax date and time. The default basket of two entry-size plain donairs and one smallest extra sauce costs $19.08 at each King of Donair branch, $20.60 at Tony’s, $21.85 at Metro and $22.75 at Zesty before tax. King of Donair sells a 2 oz portion and Zesty sells 4 oz. Both Tony’s and Metro name their small cups without specifying a volume. Each branch links its published menu, source for weekly hours, telephone number and map.

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Build a browser tool using Python's standard library; no network required."""
+from menu_summary import menu_summary
 from html import escape
 import json
 from pathlib import Path
@@ -58,6 +59,7 @@ def build(root=ROOT):
             if placeholder not in page:
                 raise ValueError(f"Missing template placeholder: {placeholder}")
             page = page.replace(placeholder, escape(tool[key], quote=True))
+        page = page.replace("{{MENU_SUMMARY}}", menu_summary(stage))
         if re.search(r"\{\{[A-Z_]+\}\}", page):
             raise ValueError("Unresolved template placeholder in web/index.html")
         index.write_text(page, encoding="utf-8")

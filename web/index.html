@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="{{DESCRIPTION}}"><title>{{TITLE}} · Halifax pickup guide</title>
+<meta name="description" content="{{DESCRIPTION}}"><title>Halifax donair prices and late-night pickup hours · CoolCode</title><link rel="canonical" href="https://coolcode.ca/donairafterdark/">
 <link rel="stylesheet" href="./style.css"><meta name="theme-color" content="#191820"><script defer src="/assets/tool-metrics.js" referrerpolicy="no-referrer"></script>
 </head>
 <body data-tool="{{TOOL_ID}}"><a class="skip" href="#planner">Skip to pickup planner</a>
 <header><div class="wrap nav"><a class="brand" href="https://coolcode.ca/">CoolCode<span> / </span>Halifax</a><nav aria-label="Page"><a href="#planner">Compare</a><a href="#sources">Sources</a></nav></div></header>
-<main><section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><p class="kicker"><span class="moon" aria-hidden="true">☾</span> Halifax pickup guide</p><h1>Donair<br><em>After Dark</em></h1><p>Who’s open for your usual? Price the same order across Halifax counters, even after midnight.</p></div><figure><img src="./assets/halifax-donair.webp" alt="A Halifax-style donair with shaved beef and white sauce on an open pita" width="960" height="720"><figcaption>Donair, 2019 · Paulo O</figcaption></figure></div></section>
+<main><section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><p class="kicker"><span class="moon" aria-hidden="true">☾</span> {{TITLE}}</p><h1>Donair<br><em>After Dark</em></h1><p>Who’s open for your usual? Price the same order across Halifax counters, even after midnight.</p></div><figure><img src="./assets/halifax-donair.webp" alt="A Halifax-style donair with shaved beef and white sauce on an open pita" width="960" height="720"><figcaption>Donair, 2019 · Paulo O</figcaption></figure></div></section>
 <div class="wrap game-promo"><p><strong>Hungry for a high score?</strong> Play a quick donair game on FunApps.</p><a href="https://donair.funapps.ca/">Play Donair Dash</a></div>
 <div class="wrap workarea" id="planner"><aside><h2>Your pickup</h2><form id="controls">
 <fieldset><legend>When</legend><div class="fields"><label>Date<input type="date" min="2025-04-01" id="date" required></label><label>Time<input type="time" id="time" required></label></div>
@@ -15,6 +15,7 @@
 <button type="button" id="save" class="primary">Save my usual order</button><button type="button" id="restore" class="restore" hidden>Restore saved order</button><p class="hint" id="saved" role="status">Saved orders stay on this device.</p>
 </form></aside><section class="results" aria-labelledby="results-heading"><div class="section-head"><div><p class="kicker">Counter comparison</p><h2 id="results-heading">Pickup options</h2></div><label class="show">Show<select id="filter"><option value="all">All branches</option><option value="open">Open only</option><option value="unknown">Hours unknown</option></select></label></div>
 <p id="summary" aria-live="polite">Loading the shop menus…</p><div id="rows"></div><noscript>Enable JavaScript to compare baskets. The links below lead to the shop menus.</noscript></section></div>
+{{MENU_SUMMARY}}
 <section class="notes" id="sources"><div class="wrap notes-grid"><div><p class="kicker">Menu notes</p><h2>Where the numbers come from</h2></div><div><p>Each quote uses the shop’s posted menu in Canadian dollars. Entry size means regular or small. Meat weights can differ. Sauce on the donair is separate from the extra portions you select.</p>
 <p>Opening times follow the published weekly counter schedule, including the previous day’s late hours. Call for holiday changes or to confirm a pickup. The tax option estimates Nova Scotia HST on the basket subtotal. Tips, delivery and specials are excluded. <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html">CRA tax rates</a></p>
 <p class="source-list"><a href="https://www.tonysdonair.com/donairs">Tony’s</a> · <a href="https://www.kingofdonair.ca/order-online-choose-a-location/">King of Donair</a> · <a href="https://zestypizza.ca/menu/donairs">Zesty</a> · <a href="https://metropizzahalifax.ca/menu">Metro Pizza</a></p>
